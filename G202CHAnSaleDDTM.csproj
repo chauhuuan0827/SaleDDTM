@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{56DF0CDA-83BF-4B7D-BE31-F76F8747F0C4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>G202CHAnSaleDDTM</RootNamespace>
+    <AssemblyName>G202CHAnSaleDDTM</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BFrQLDDTM02An.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BFrQLDDTM02An.Designer.cs">
+      <DependentUpon>BFrQLDDTM02An.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BG202AnSaleDDTNNSX.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BG202AnSaleDDTNNSX.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BG22AnSaleDDTMSP.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BG22AnSaleDDTMSP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Fr1Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fr1Main.Designer.cs">
+      <DependentUpon>Fr1Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fr2QLDMSPDD_DDTM02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fr2QLDMSPDD_DDTM02.Designer.cs">
+      <DependentUpon>Fr2QLDMSPDD_DDTM02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fr2SPDD_DDTM02RBTV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fr2SPDD_DDTM02RBTV.Designer.cs">
+      <DependentUpon>Fr2SPDD_DDTM02RBTV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fr3Bill_DDTM02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fr3Bill_DDTM02.Designer.cs">
+      <DependentUpon>Fr3Bill_DDTM02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fr4Invoice_DDTM02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fr4Invoice_DDTM02.Designer.cs">
+      <DependentUpon>Fr4Invoice_DDTM02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G202AnSaleDDTNDataSetbill.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>G202AnSaleDDTNDataSetbill.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="G202AnSaleDDTNDSbill.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>G202AnSaleDDTNDSbill.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="G202AnSaleDDTNDSin.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>G202AnSaleDDTNDSin.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="G202AnSaleDDTNDSIN1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>G202AnSaleDDTNDSIN1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="G202AnSaleDDTNDSKH.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>G202AnSaleDDTNDSKH.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="G22AnSaleDDTNctiRBTV.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>G22AnSaleDDTNctiRBTV.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="G22AnSaleDDTNtkRBTV.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>G22AnSaleDDTNtkRBTV.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="G22AnSleDDTMdvRBTV.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>G22AnSleDDTMdvRBTV.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="G22AnSleDDTNctbRBTV.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>G22AnSleDDTNctbRBTV.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_1G202AnSaleDDTNDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_1G202AnSaleDDTNDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_1G202AnSaleDDTNDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_1G202AnSaleDDTNDataSet1.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BFrQLDDTM02An.resx">
+      <DependentUpon>BFrQLDDTM02An.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fr1Main.resx">
+      <DependentUpon>Fr1Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fr2QLDMSPDD_DDTM02.resx">
+      <DependentUpon>Fr2QLDMSPDD_DDTM02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fr2SPDD_DDTM02RBTV.resx">
+      <DependentUpon>Fr2SPDD_DDTM02RBTV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fr3Bill_DDTM02.resx">
+      <DependentUpon>Fr3Bill_DDTM02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fr4Invoice_DDTM02.resx">
+      <DependentUpon>Fr4Invoice_DDTM02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="BG202AnSaleDDTNNSX.xsc">
+      <DependentUpon>BG202AnSaleDDTNNSX.xsd</DependentUpon>
+    </None>
+    <None Include="BG202AnSaleDDTNNSX.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BG202AnSaleDDTNNSX.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BG202AnSaleDDTNNSX.xss">
+      <DependentUpon>BG202AnSaleDDTNNSX.xsd</DependentUpon>
+    </None>
+    <None Include="BG22AnSaleDDTMSP.xsc">
+      <DependentUpon>BG22AnSaleDDTMSP.xsd</DependentUpon>
+    </None>
+    <None Include="BG22AnSaleDDTMSP.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BG22AnSaleDDTMSP.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BG22AnSaleDDTMSP.xss">
+      <DependentUpon>BG22AnSaleDDTMSP.xsd</DependentUpon>
+    </None>
+    <None Include="G202AnSaleDDTNDataSetbill.xsc">
+      <DependentUpon>G202AnSaleDDTNDataSetbill.xsd</DependentUpon>
+    </None>
+    <None Include="G202AnSaleDDTNDataSetbill.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>G202AnSaleDDTNDataSetbill.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="G202AnSaleDDTNDataSetbill.xss">
+      <DependentUpon>G202AnSaleDDTNDataSetbill.xsd</DependentUpon>
+    </None>
+    <None Include="G202AnSaleDDTNDSbill.xsc">
+      <DependentUpon>G202AnSaleDDTNDSbill.xsd</DependentUpon>
+    </None>
+    <None Include="G202AnSaleDDTNDSbill.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>G202AnSaleDDTNDSbill.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="G202AnSaleDDTNDSbill.xss">
+      <DependentUpon>G202AnSaleDDTNDSbill.xsd</DependentUpon>
+    </None>
+    <None Include="G202AnSaleDDTNDSin.xsc">
+      <DependentUpon>G202AnSaleDDTNDSin.xsd</DependentUpon>
+    </None>
+    <None Include="G202AnSaleDDTNDSin.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>G202AnSaleDDTNDSin.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="G202AnSaleDDTNDSin.xss">
+      <DependentUpon>G202AnSaleDDTNDSin.xsd</DependentUpon>
+    </None>
+    <None Include="G202AnSaleDDTNDSIN1.xsc">
+      <DependentUpon>G202AnSaleDDTNDSIN1.xsd</DependentUpon>
+    </None>
+    <None Include="G202AnSaleDDTNDSIN1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>G202AnSaleDDTNDSIN1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="G202AnSaleDDTNDSIN1.xss">
+      <DependentUpon>G202AnSaleDDTNDSIN1.xsd</DependentUpon>
+    </None>
+    <None Include="G202AnSaleDDTNDSKH.xsc">
+      <DependentUpon>G202AnSaleDDTNDSKH.xsd</DependentUpon>
+    </None>
+    <None Include="G202AnSaleDDTNDSKH.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>G202AnSaleDDTNDSKH.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="G202AnSaleDDTNDSKH.xss">
+      <DependentUpon>G202AnSaleDDTNDSKH.xsd</DependentUpon>
+    </None>
+    <None Include="G22AnSaleDDTNctiRBTV.xsc">
+      <DependentUpon>G22AnSaleDDTNctiRBTV.xsd</DependentUpon>
+    </None>
+    <None Include="G22AnSaleDDTNctiRBTV.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>G22AnSaleDDTNctiRBTV.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="G22AnSaleDDTNctiRBTV.xss">
+      <DependentUpon>G22AnSaleDDTNctiRBTV.xsd</DependentUpon>
+    </None>
+    <None Include="G22AnSaleDDTNtkRBTV.xsc">
+      <DependentUpon>G22AnSaleDDTNtkRBTV.xsd</DependentUpon>
+    </None>
+    <None Include="G22AnSaleDDTNtkRBTV.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>G22AnSaleDDTNtkRBTV.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="G22AnSaleDDTNtkRBTV.xss">
+      <DependentUpon>G22AnSaleDDTNtkRBTV.xsd</DependentUpon>
+    </None>
+    <None Include="G22AnSleDDTMdvRBTV.xsc">
+      <DependentUpon>G22AnSleDDTMdvRBTV.xsd</DependentUpon>
+    </None>
+    <None Include="G22AnSleDDTMdvRBTV.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>G22AnSleDDTMdvRBTV.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="G22AnSleDDTMdvRBTV.xss">
+      <DependentUpon>G22AnSleDDTMdvRBTV.xsd</DependentUpon>
+    </None>
+    <None Include="G22AnSleDDTNctbRBTV.xsc">
+      <DependentUpon>G22AnSleDDTNctbRBTV.xsd</DependentUpon>
+    </None>
+    <None Include="G22AnSleDDTNctbRBTV.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>G22AnSleDDTNctbRBTV.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="G22AnSleDDTNctbRBTV.xss">
+      <DependentUpon>G22AnSleDDTNctbRBTV.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="_1G202AnSaleDDTNDataSet.xsc">
+      <DependentUpon>_1G202AnSaleDDTNDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_1G202AnSaleDDTNDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_1G202AnSaleDDTNDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_1G202AnSaleDDTNDataSet.xss">
+      <DependentUpon>_1G202AnSaleDDTNDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_1G202AnSaleDDTNDataSet1.xsc">
+      <DependentUpon>_1G202AnSaleDDTNDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_1G202AnSaleDDTNDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_1G202AnSaleDDTNDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_1G202AnSaleDDTNDataSet1.xss">
+      <DependentUpon>_1G202AnSaleDDTNDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\z\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\1 đenSamsung Galaxy A03S Ram 4G64GB.jpg" />
+    <Content Include="Images\10 đen Realme Q5 5G 6GB128GB.png" />
+    <Content Include="Images\11 bạc Realme Q5 5G 6GB128GB.png" />
+    <Content Include="Images\12 đen oppo.png" />
+    <Content Include="Images\13 xanh oppo.jpg" />
+    <Content Include="Images\14 xám iPhone-14-Pro-Max %284%29_1668090477_1.jpg" />
+    <Content Include="Images\15 vàng.jpg" />
+    <Content Include="Images\16 bạc ip.jpg" />
+    <Content Include="Images\17 Tecno Spark 7 xanh lá.png" />
+    <Content Include="Images\18 xanh biển Tecno Spark 7.png" />
+    <Content Include="Images\19 đen Tecno Spark 7.png" />
+    <Content Include="Images\2 trắng.jpg" />
+    <Content Include="Images\3 A33-cam_1668068795_1.png" />
+    <Content Include="Images\4 xanh Samsung Galaxy A33 5G Chính Hãn.png" />
+    <Content Include="Images\5 đen Samsung Galaxy A33 5G Chính Hãn.png" />
+    <Content Include="Images\6 xám Xiaomi Redmi Note 12 4GB128GB Chính hãng.jpg" />
+    <Content Include="Images\7 xanh bang Xiaomi Redmi Note 12 4GB128GB.jpg" />
+    <Content Include="Images\8 xanh bạc hà Xiaomi Redmi Note 12 4GB128GB Chính hãng.jpg" />
+    <Content Include="Images\9 vàng Realme Q5 5G 6GB128GB.png" />
+    <Content Include="Images\ImageChoose.png" />
+    <None Include="Resources\logo-ddtm.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
